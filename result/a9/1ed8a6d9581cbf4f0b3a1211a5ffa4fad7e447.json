@@ -4,7 +4,7 @@
     {
       "branch": "aws-ubuntu-trusty-stemcell",
       "result": "aea0d99bd14c3aef038eda3e5e8498b8d61c4e17",
-      "timestamp": "2016-09-19T07:47:17Z"
+      "timestamp": "2016-09-19T20:11:27Z"
     }
   ],
   "output": [
@@ -64,5 +64,5 @@
       "size": 59
     }
   ],
-  "timestamp": "2016-09-19T14:43:15Z"
+  "timestamp": "2016-09-19T20:19:49Z"
 }
