@@ -21,7 +21,8 @@
             "&& jq -nc ",
             "--arg name \"$( grep '^name: ' < /tmp/stemcell.MF | awk '{ print $2 }' )\"",
             "--arg version \"$( cat stemcell/version )\"",
-            "'{name:$name,version:$version}|to_entries[]' > result/.datapact/metadata.json"
+            "'{branch:\":concourse\",result:($name+\"/\"+$version),metadata:({name:$name,version:$version}|to_entries)}'",
+            " > result/.datapact/result"
           ]
           | join(" ")
         )
