@@ -15,13 +15,15 @@
         "-c",
         (
           [
-            "curl -o result/stemcell.tgz $( cat stemcell/url | sed 's/light-//' )",
+            "url=\"$( cat stemcell/url | sed 's/light-//' )\"",
+            "; curl -o result/stemcell.tgz \"$url\"",
             "&& tar -xOzf stemcell/stemcell.tgz stemcell.MF > /tmp/stemcell.MF",
             "&& mkdir result/.datapact",
             "&& jq -nc ",
             "--arg name \"$( grep '^name: ' < /tmp/stemcell.MF | awk '{ print $2 }' )\"",
             "--arg version \"$( cat stemcell/version )\"",
-            "'{branch:\":concourse\",result:($name+\"/\"+$version),metadata:({name:$name,version:$version}|to_entries)}'",
+            "--arg url \"$url\"",
+            "'{branch:\":concourse\",result:($name+\"/\"+$version),metadata:({name:$name,version:$version,url:$url}|to_entries)}'",
             " > result/.datapact/result"
           ]
           | join(" ")
