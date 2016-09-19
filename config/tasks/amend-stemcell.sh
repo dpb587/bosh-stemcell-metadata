@@ -42,10 +42,10 @@ jq -n \
 jq \
   --slurpfile amend /tmp/amend.json \
   '
-    map(select(.version != $amend.version))
-    + $amend
+    map(select(.version != $amend[0].version))
+    + $amend[0]
     # naive sorting
-    | sort_by($amend.version | split(".")) | reverse
+    | sort_by(.version | split(".") | map(tonumber)) | reverse
   ' \
   < "$stemcell.json" \
   > "$stemcell.json.new"
