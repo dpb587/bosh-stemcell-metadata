@@ -37,14 +37,15 @@ jq -n \
   ' \
   > /tmp/amend.json
 
-# remove any existing versions
+# add it
 
 jq \
   --slurpfile amend /tmp/amend.json \
   '
     map(select(.version != $amend.version))
     + $amend
-    | sort_by($amend.version | split("."))
+    # naive sorting
+    | sort_by($amend.version | split(".")) | reverse
   ' \
   < "$stemcell.json" \
   > "$stemcell.json.new"
