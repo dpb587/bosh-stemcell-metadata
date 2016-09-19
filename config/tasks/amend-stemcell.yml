@@ -1,0 +1,22 @@
+---
+platform: "linux"
+resource:
+  type: "docker-image"
+  source:
+    repository: "concourse/git-resource"
+run:
+  path: "gh-pages/config/tasks/amend-stemcell.sh"
+inputs:
+  - name: "gh-pages"
+  - name: "stemcell"
+  - name: "stemcell-metadata"
+outputs:
+  - name: "gh-pages"
+    path: "gh-pages-output"
+params:
+  stemcell: ~
+  s3_endpoint: ~
+  s3_bucket: ~
+  s3_prefix: ~
+  s3_access_key_id: ~
+  s3_secret_access_key: ~
