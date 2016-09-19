@@ -10,7 +10,7 @@ if [ ! -e "$stemcell.json" ]; then
   echo '[]' > "$stemcell.json"
 fi
 
-version=$( jq '.metadata | from_entries | .version < ../stemcell/.datapact/result )
+version=$( jq '.metadata | from_entries | .version' < ../stemcell/.datapact/result )
 
 # build our record
 
