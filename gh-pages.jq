@@ -21,11 +21,16 @@ def gh_pages:
         "name": "publish-aws-ubuntu-trusty",
         "plan": [
           {
-            "get": "aws-ubuntu-trusty-metadata",
+            "get": "stemcell-metadata",
+            "resource": "aws-ubuntu-trusty-metadata",
+            "passed": [
+              "aws-ubuntu-trusty-metadata"
+            ],
             "trigger": true
           },
           {
-            "get": "aws-ubuntu-trusty-stemcell-raw-stemcell",
+            "get": "stemcell",
+            "resource": "aws-ubuntu-trusty-stemcell",
             "passed": [
               "aws-ubuntu-trusty-metadata"
             ]
