@@ -23,7 +23,7 @@ jq -n \
       "metadata": (
         $metadata[0].output
         | map({
-          "key": ( .path | gsub("\.gz$", "") ),
+          "key": ( .path | gsub("\\.gz$", "") ),
           "value": (
             . +
             {
