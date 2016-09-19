@@ -25,7 +25,7 @@ def gh_pages:
             "trigger": true
           },
           {
-            "get": "aws-ubuntu-trusty-stemcell",
+            "get": "aws-ubuntu-trusty-stemcell-raw-stemcell",
             "passed": [
               "aws-ubuntu-trusty-metadata"
             ]
@@ -35,6 +35,7 @@ def gh_pages:
           },
           {
             "task": "amend-stemcell",
+            "file": "gh-pages/config/tasks/amend-stemcell.yml",
             "params": {
               "stemcell": "aws-ubuntu-trusty",
               "s3_endpoint": s3.endpoint,

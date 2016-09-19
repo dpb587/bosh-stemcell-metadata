@@ -4,7 +4,7 @@ include "gh-pages" {"search":"."};
 {
   "branch_list": [
     {
-      "branch": "aws-ubuntu-trusty"
+      "branch": "aws-ubuntu-trusty-stemcell"
     },
     {
       "branch": "aws-ubuntu-trusty-metadata"
