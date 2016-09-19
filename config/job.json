@@ -1,0 +1,26 @@
+{
+  "groups": [
+    "aws",
+    "ubuntu-trusty"
+  ],
+  "task": {
+    "image": {
+      "source": {
+        "repository": "dpb587/bosh-stemcell-metadata"
+      }
+    },
+    "privileged": true,
+    "run": {
+      "path": "/bosh-stemcell-metadata/bin/analyze"
+    },
+    "env": {
+      "analyzer": "all",
+      "tarball": "aws-ubuntu-trusty-stemcell/stemcell.tgz"
+    }
+  },
+  "input": [
+    {
+      "branch": "aws-ubuntu-trusty-stemcell"
+    }
+  ]
+}
