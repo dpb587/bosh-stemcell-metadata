@@ -1,0 +1,78 @@
+{
+  "branch": "aws-ubuntu-trusty-metadata",
+  "input": [
+    {
+      "branch": "aws-ubuntu-trusty-stemcell",
+      "metadata": [
+        {
+          "key": "name",
+          "value": "bosh-aws-xen-ubuntu-trusty-go_agent"
+        },
+        {
+          "key": "version",
+          "value": "3262.12"
+        }
+      ],
+      "result": "491d8f06768edbd3e20a51d9f2bceaa49cfb6357",
+      "timestamp": "2016-09-19T06:33:47Z"
+    }
+  ],
+  "output": [
+    {
+      "blob": "37ffc4bcedca2d2df242b02d59954480c36004ca",
+      "checksum": {
+        "sha256": "8545cd9bdc74ef14bbbf0265aecd226f0df80ca53ed97e25690679aff83bcb5d"
+      },
+      "filters": [
+        "gz"
+      ],
+      "path": "filelist.gz",
+      "size": 1424822
+    },
+    {
+      "blob": "45db9b645cdc2ae74775f7658e330d5e880a608c",
+      "checksum": {
+        "sha256": "7c9685c20b019be7edacf9344c90b1ab6bf9b90ed799231c47dd1c42352a3ff6"
+      },
+      "filters": [
+        "gz"
+      ],
+      "path": "manifest.gz",
+      "size": 272
+    },
+    {
+      "blob": "51c3d80f089a6b2e10921301cfb5bcb5aebd8244",
+      "checksum": {
+        "sha256": "d493a8322c5dbf470d9e6c45f37836cc11d093ba5f5043ba1c33dec5f3233ea8"
+      },
+      "filters": [
+        "gz"
+      ],
+      "path": "md5.gz",
+      "size": 53
+    },
+    {
+      "blob": "abbe97faaf18f7e54d0bdf95cfd6dfa3afa1b28f",
+      "checksum": {
+        "sha256": "f3259e46931d5e39ed4a01d166cf829acc6d352b976813c747aec31af951d5e9"
+      },
+      "filters": [
+        "gz"
+      ],
+      "path": "packages.gz",
+      "size": 11407
+    },
+    {
+      "blob": "dd914495b3c0b5b48e743dfaefd60648c2bc20ce",
+      "checksum": {
+        "sha256": "875775ab1db4a53b6191c0dc1e1a2826111d6c524cf0758aa659697dd46cbf08"
+      },
+      "filters": [
+        "gz"
+      ],
+      "path": "sha1.gz",
+      "size": 59
+    }
+  ],
+  "timestamp": "2016-09-19T06:51:29Z"
+}
