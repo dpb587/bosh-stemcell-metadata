@@ -11,6 +11,10 @@
         {
           "key": "version",
           "value": "3262.7"
+        },
+        {
+          "key": "url",
+          "value": "https://d26ekeud912fhb.cloudfront.net/bosh-stemcell/aws/light-bosh-stemcell-3262.7-aws-xen-ubuntu-trusty-go_agent.tgz"
         }
       ],
       "result": "bosh-aws-xen-ubuntu-trusty-go_agent/3262.7",
@@ -27,5 +31,5 @@
       "size": 528139487
     }
   ],
-  "timestamp": "2016-09-19T07:44:05Z"
+  "timestamp": "2016-09-19T07:47:17Z"
 }
