@@ -27,7 +27,7 @@ jq -n \
           "value": (
             . +
             {
-              "url": (env.s3_endpoint + "/" + env.s3_bucket + "/" + env.s3_prefix + $metadata.branch + "/" + .blob)
+              "url": (env.s3_endpoint + "/" + env.s3_bucket + "/" + env.s3_prefix + $metadata[0].branch + "/" + .blob)
             }
           )
         })
@@ -53,4 +53,4 @@ jq \
 cp "$stemcell.json.new" "$stemcell.json"
 
 git add "$stemcell.json"
-git commit -m "Update $stemcell.json" "$stemcell.json"
+git commit -m "Add $stemcell/$version" "$stemcell.json"
