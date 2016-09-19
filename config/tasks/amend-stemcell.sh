@@ -43,7 +43,7 @@ jq \
   --slurpfile amend /tmp/amend.json \
   '
     map(select(.version != $amend[0].version))
-    + $amend[0]
+    + $amend
     # naive sorting
     | sort_by(.version | split(".") | map(tonumber)) | reverse
   ' \
