@@ -1,1 +1,67 @@
-[]
+[
+  {
+    "version": "3262.14",
+    "metadata": {
+      "filelist": {
+        "blob": "f94cd66ed4af040d75d158e65827e4f476ecf9fa",
+        "checksum": {
+          "sha256": "49f8f24ae02232262511b028d0b71f4ddfd4761b36681fb994cedaa929c0854e"
+        },
+        "filters": [
+          "gz"
+        ],
+        "path": "filelist.gz",
+        "size": 1424887,
+        "url": "https://s3.amazonaws.com/dpb587-bosh-stemcell-metadata-us-east-1/v2/aws-ubuntu-trusty-metadata/f94cd66ed4af040d75d158e65827e4f476ecf9fa"
+      },
+      "manifest": {
+        "blob": "be34ac100ea018d7e90bbff433debd5af2d6cf75",
+        "checksum": {
+          "sha256": "07adf7f82d8bd8e5af6231533054486126d9a11a0f1fe1bb2a3b41c1388a111d"
+        },
+        "filters": [
+          "gz"
+        ],
+        "path": "manifest.gz",
+        "size": 274,
+        "url": "https://s3.amazonaws.com/dpb587-bosh-stemcell-metadata-us-east-1/v2/aws-ubuntu-trusty-metadata/be34ac100ea018d7e90bbff433debd5af2d6cf75"
+      },
+      "md5": {
+        "blob": "7aa50543c6210dfc02864b89fe3348182d59a126",
+        "checksum": {
+          "sha256": "57f1d4825c398561513d3d734f4b0e71b9d032645f77ef9f09f1f7ac175ea80c"
+        },
+        "filters": [
+          "gz"
+        ],
+        "path": "md5.gz",
+        "size": 53,
+        "url": "https://s3.amazonaws.com/dpb587-bosh-stemcell-metadata-us-east-1/v2/aws-ubuntu-trusty-metadata/7aa50543c6210dfc02864b89fe3348182d59a126"
+      },
+      "packages": {
+        "blob": "1ab2ac18973b0d1fe3cc3ff8cf92fe757a277c23",
+        "checksum": {
+          "sha256": "37a9918f929d6d2445d670192798f79ac53857689ce1c51ca3e0de933a008854"
+        },
+        "filters": [
+          "gz"
+        ],
+        "path": "packages.gz",
+        "size": 11407,
+        "url": "https://s3.amazonaws.com/dpb587-bosh-stemcell-metadata-us-east-1/v2/aws-ubuntu-trusty-metadata/1ab2ac18973b0d1fe3cc3ff8cf92fe757a277c23"
+      },
+      "sha1": {
+        "blob": "b302e9b394cfe4dab9bcf9b97cb41749311c3306",
+        "checksum": {
+          "sha256": "38065778ff9fc239995b4484373e6be0216599f28745827511bfdd58924946ad"
+        },
+        "filters": [
+          "gz"
+        ],
+        "path": "sha1.gz",
+        "size": 59,
+        "url": "https://s3.amazonaws.com/dpb587-bosh-stemcell-metadata-us-east-1/v2/aws-ubuntu-trusty-metadata/b302e9b394cfe4dab9bcf9b97cb41749311c3306"
+      }
+    }
+  }
+]
