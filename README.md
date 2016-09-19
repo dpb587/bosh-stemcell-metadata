@@ -5,19 +5,26 @@ Archiving metadata about stemcells in a more accessible manner.
 
 ## Example
 
-Download the filesystem table and checksums of the AWS stemcell for version 3192...
+The `gh-pages` branch has the indexed stemcell metadata files.
 
-    $ wget -O filelist.tgz "$(
-      curl https://dpb587.github.io/bosh-stemcell-metadata/aws-ubuntu-trusty.json \
-        | jq 'map(select(.version == "3192"))[0].metadata["filelist.gz"].url'
-      )"
+    $ wget https://dpb587.github.io/bosh-stemcell-metadata/aws-ubuntu-trusty.json
+
+You'll find an array, each having a `version` key that you can search for.
+
+    $ jq 'map(select("3262.14" == .version))[0]' < aws-ubuntu-trusty.json
+
+Versions have artifact references, including a `url` and `checksum`.
+
+    $ filelist_url=$( jq -r .metadata.filelist.url < aws-ubuntu-trusty-3262.14.json )
+    $ wget -O- "$filelist_url" | gunzip > filelist.txt
+    $ tail filelist.txt
 
 
 ## Deployment
 
     $ git clone -b master git@github.com:dpb587/bosh-stemcell-metadata.git
     $ cd bosh-stemcell-metadata
-    $ datapact-pipeline-generate | datapact-pipeline-apply
+    $ fly set-pipeline -p bosh-stemcell-metadata -c <( datapact-pipeline )
 
 
 ## License

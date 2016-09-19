@@ -19,6 +19,7 @@ def gh_pages:
     "jobs": [
       {
         "name": "publish-aws-ubuntu-trusty",
+        "serial": true,
         "plan": [
           {
             "get": "stemcell-metadata",
@@ -26,6 +27,9 @@ def gh_pages:
             "passed": [
               "aws-ubuntu-trusty-metadata"
             ],
+            "params": {
+              "download": false
+            },
             "trigger": true
           },
           {
@@ -33,7 +37,10 @@ def gh_pages:
             "resource": "aws-ubuntu-trusty-stemcell",
             "passed": [
               "aws-ubuntu-trusty-metadata"
-            ]
+            ],
+            "params": {
+              "download": false
+            }
           },
           {
             "get": "gh-pages"
