@@ -334,5 +334,47 @@
         "url": "https://s3.amazonaws.com/dpb587-bosh-stemcell-metadata-us-east-1/v2/aws-xen-ubuntu-trusty-metadata/d66a8cd19dedbb0ba95b6c44843bde3223f10c9c"
       }
     }
+  },
+  {
+    "version": "3262.4",
+    "url": "https://d26ekeud912fhb.cloudfront.net/bosh-stemcell/aws/bosh-stemcell-3262.4-aws-xen-ubuntu-trusty-go_agent.tgz",
+    "metadata": {
+      "filelist": {
+        "blob": "731fc4b97ab635c40f258f0a25755e27013d527f",
+        "checksum": {
+          "sha256": "04de96c31359a13bb6100114546213b3f0e94fb2aba44ea3042ab6a31f8021fa"
+        },
+        "filters": [
+          "gz"
+        ],
+        "path": "filelist.gz",
+        "size": 1425073,
+        "url": "https://s3.amazonaws.com/dpb587-bosh-stemcell-metadata-us-east-1/v2/aws-xen-ubuntu-trusty-metadata/731fc4b97ab635c40f258f0a25755e27013d527f"
+      },
+      "manifest": {
+        "blob": "3c7826f9660389a9ce37251e2d7a1ddb744cb65f",
+        "checksum": {
+          "sha256": "0e10492fcba5697ce1aa1233eb21c2a5b3b1df20759d4d34e751a947851d0dce"
+        },
+        "filters": [
+          "gz"
+        ],
+        "path": "manifest.gz",
+        "size": 273,
+        "url": "https://s3.amazonaws.com/dpb587-bosh-stemcell-metadata-us-east-1/v2/aws-xen-ubuntu-trusty-metadata/3c7826f9660389a9ce37251e2d7a1ddb744cb65f"
+      },
+      "packages": {
+        "blob": "850b16b1d5beba9092de326401d496bad908f9ef",
+        "checksum": {
+          "sha256": "850a596b1b3f2f6ca5304f4fb817c08b91792fece21af28bb74267e6694f4d87"
+        },
+        "filters": [
+          "gz"
+        ],
+        "path": "packages.gz",
+        "size": 11437,
+        "url": "https://s3.amazonaws.com/dpb587-bosh-stemcell-metadata-us-east-1/v2/aws-xen-ubuntu-trusty-metadata/850b16b1d5beba9092de326401d496bad908f9ef"
+      }
+    }
   }
 ]
