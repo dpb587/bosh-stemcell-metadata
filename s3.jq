@@ -1,3 +1,7 @@
+#
+# separate file since it's used for a couple things
+#
+
 def s3:
   {
     "endpoint": "https://s3.amazonaws.com",

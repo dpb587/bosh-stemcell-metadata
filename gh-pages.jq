@@ -1,3 +1,8 @@
+#
+# once the regular datapact jobs have extracted what they need, aggregate and
+# index it into our indexed JSON file and make it available via GitHub Pages.
+#
+
 include "s3" {"search":"."};
 
 def gh_pages:
@@ -6,26 +11,26 @@ def gh_pages:
       {
         "name": "aws",
         "jobs": [
-          "publish-aws-ubuntu-trusty"
+          "publish-aws-xen-ubuntu-trusty"
         ]
       },
       {
         "name": "ubuntu-trusty",
         "jobs": [
-          "publish-aws-ubuntu-trusty"
+          "publish-aws-xen-ubuntu-trusty"
         ]
       }
     ],
     "jobs": [
       {
-        "name": "publish-aws-ubuntu-trusty",
+        "name": "publish-aws-xen-ubuntu-trusty",
         "serial": true,
         "plan": [
           {
             "get": "stemcell-metadata",
-            "resource": "aws-ubuntu-trusty-metadata",
+            "resource": "aws-xen-ubuntu-trusty-metadata",
             "passed": [
-              "aws-ubuntu-trusty-metadata"
+              "aws-xen-ubuntu-trusty-metadata"
             ],
             "params": {
               "download": false
@@ -34,9 +39,9 @@ def gh_pages:
           },
           {
             "get": "stemcell",
-            "resource": "aws-ubuntu-trusty-stemcell",
+            "resource": "aws-xen-ubuntu-trusty-stemcell",
             "passed": [
-              "aws-ubuntu-trusty-metadata"
+              "aws-xen-ubuntu-trusty-metadata"
             ],
             "params": {
               "download": false
@@ -49,7 +54,7 @@ def gh_pages:
             "task": "amend-stemcell",
             "file": "gh-pages/config/tasks/amend-stemcell.yml",
             "params": {
-              "stemcell": "aws-ubuntu-trusty",
+              "stemcell": "aws-xen-ubuntu-trusty",
               "s3_endpoint": s3.endpoint,
               "s3_bucket": s3.bucket,
               "s3_prefix": s3.prefix,

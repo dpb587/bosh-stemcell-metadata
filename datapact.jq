@@ -4,10 +4,10 @@ include "gh-pages" {"search":"."};
 {
   "branch_list": [
     {
-      "branch": "aws-ubuntu-trusty-stemcell"
+      "branch": "aws-xen-ubuntu-trusty-stemcell"
     },
     {
-      "branch": "aws-ubuntu-trusty-metadata"
+      "branch": "aws-xen-ubuntu-trusty-metadata"
     }
   ],
   "datapact_job": {
