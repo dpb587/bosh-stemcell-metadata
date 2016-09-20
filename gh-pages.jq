@@ -22,15 +22,15 @@ def gh_pages:
       }
     ],
     "jobs": [
-      {
-        "name": "publish-aws-xen-ubuntu-trusty",
+      [ "aws-xen-centos-7", "aws-xen-ubuntu-trusty" ] | map({
+        "name": "publish-\(.)",
         "serial": true,
         "plan": [
           {
             "get": "stemcell-metadata",
-            "resource": "aws-xen-ubuntu-trusty-metadata",
+            "resource": "\(.)-metadata",
             "passed": [
-              "aws-xen-ubuntu-trusty-metadata"
+              "\(.)-metadata"
             ],
             "params": {
               "download": false
@@ -39,9 +39,9 @@ def gh_pages:
           },
           {
             "get": "stemcell",
-            "resource": "aws-xen-ubuntu-trusty-stemcell",
+            "resource": "\(.)-stemcell",
             "passed": [
-              "aws-xen-ubuntu-trusty-metadata"
+              "\(.)-metadata"
             ],
             "params": {
               "download": false
@@ -54,7 +54,7 @@ def gh_pages:
             "task": "amend-stemcell",
             "file": "gh-pages/config/tasks/amend-stemcell.yml",
             "params": {
-              "stemcell": "aws-xen-ubuntu-trusty",
+              "stemcell": .,
               "s3_endpoint": s3.endpoint,
               "s3_bucket": s3.bucket,
               "s3_prefix": s3.prefix,
@@ -70,7 +70,7 @@ def gh_pages:
             }
           }
         ]
-      }
+      })[]
     ],
     "resources": [
       {

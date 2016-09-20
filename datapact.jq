@@ -4,6 +4,12 @@ include "gh-pages" {"search":"."};
 {
   "branch_list": [
     {
+      "branch": "aws-xen-centos-7-stemcell"
+    },
+    {
+      "branch": "aws-xen-centos-7-metadata"
+    },
+    {
       "branch": "aws-xen-ubuntu-trusty-stemcell"
     },
     {
