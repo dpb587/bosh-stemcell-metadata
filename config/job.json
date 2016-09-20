@@ -1,0 +1,29 @@
+{
+  "groups": [
+    "aws",
+    "centos-7"
+  ],
+  "serial_groups": [
+    "metadata"
+  ],
+  "task": {
+    "image": {
+      "source": {
+        "repository": "dpb587/bosh-stemcell-metadata"
+      }
+    },
+    "privileged": true,
+    "run": {
+      "path": "/bosh-stemcell-metadata/bin/analyze"
+    },
+    "env": {
+      "analyzer": "filelist,manifest,packages",
+      "tarball": "aws-xen-centos-7-stemcell/stemcell.tgz"
+    }
+  },
+  "input": [
+    {
+      "branch": "aws-xen-centos-7-stemcell"
+    }
+  ]
+}
