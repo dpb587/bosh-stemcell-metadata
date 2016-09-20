@@ -17,7 +17,7 @@
       "path": "/bosh-stemcell-metadata/bin/analyze"
     },
     "env": {
-      "analyzer": "filelist,manifest,packages",
+      "analyzer": "filelist manifest packages",
       "tarball": "aws-xen-ubuntu-trusty-stemcell/stemcell.tgz"
     }
   },
