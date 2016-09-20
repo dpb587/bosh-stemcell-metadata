@@ -10,26 +10,26 @@
         },
         {
           "key": "version",
-          "value": "3262.7"
+          "value": "3263"
         },
         {
           "key": "url",
-          "value": "https://d26ekeud912fhb.cloudfront.net/bosh-stemcell/aws/light-bosh-stemcell-3262.7-aws-xen-ubuntu-trusty-go_agent.tgz"
+          "value": "https://d26ekeud912fhb.cloudfront.net/bosh-stemcell/aws/light-bosh-stemcell-3263-aws-xen-ubuntu-trusty-go_agent.tgz"
         }
       ],
-      "result": "bosh-aws-xen-ubuntu-trusty-go_agent/3262.7",
+      "result": "bosh-aws-xen-ubuntu-trusty-go_agent/3263",
       "timestamp": null
     }
   ],
   "output": [
     {
-      "blob": "0dbc0a72907b3d60aba62fb96abe9983f449fc83",
+      "blob": "adb9edc84540076d3e4fa00e4b4bfc235e05594a",
       "checksum": {
-        "sha256": "e6fcaa8f080a8b6cd405ea349ed9475c84d2a8c24003e71ac4b5916865130763"
+        "sha256": "d568b2108a3f5911645aeebf7536386b7f8ace5cdb27649ab52fd91b6d026135"
       },
       "path": "stemcell.tgz",
-      "size": 528139487
+      "size": 522027294
     }
   ],
-  "timestamp": "2016-09-19T20:11:27Z"
+  "timestamp": "2016-09-19T22:55:38Z"
 }
