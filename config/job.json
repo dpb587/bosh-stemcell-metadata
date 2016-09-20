@@ -3,6 +3,9 @@
     "aws",
     "ubuntu-trusty"
   ],
+  "serial_groups": [
+    "metadata"
+  ],
   "task": {
     "image": {
       "source": {
@@ -14,13 +17,13 @@
       "path": "/bosh-stemcell-metadata/bin/analyze"
     },
     "env": {
-      "analyzer": "all",
-      "tarball": "aws-ubuntu-trusty-stemcell/stemcell.tgz"
+      "analyzer": "filelist,manifest,packages",
+      "tarball": "aws-xen-ubuntu-trusty-stemcell/stemcell.tgz"
     }
   },
   "input": [
     {
-      "branch": "aws-ubuntu-trusty-stemcell"
+      "branch": "aws-xen-ubuntu-trusty-stemcell"
     }
   ]
 }
