@@ -10,16 +10,19 @@ if [ ! -e "$stemcell.json" ]; then
   echo '[]' > "$stemcell.json"
 fi
 
+url=$( jq -r '.input[0].metadata | from_entries | .url' < ../stemcell/.datapact/result )
 version=$( jq -r '.input[0].metadata | from_entries | .version' < ../stemcell/.datapact/result )
 
 # build our record
 
 jq -n \
   --arg version "$version" \
+  --arg url "$url" \
   --slurpfile metadata ../stemcell-metadata/.datapact/result \
   '
     {
       "version": $version,
+      "url": $url,
       "metadata": (
         $metadata[0].output
         | map({
