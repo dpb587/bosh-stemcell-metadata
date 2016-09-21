@@ -1,0 +1,35 @@
+{
+  "branch": "aws-xen-ubuntu-trusty-stemcell",
+  "input": [
+    {
+      "branch": ":concourse",
+      "metadata": [
+        {
+          "key": "name",
+          "value": "bosh-aws-xen-ubuntu-trusty-go_agent"
+        },
+        {
+          "key": "version",
+          "value": "3232.12"
+        },
+        {
+          "key": "url",
+          "value": "https://d26ekeud912fhb.cloudfront.net/bosh-stemcell/aws/bosh-stemcell-3232.12-aws-xen-ubuntu-trusty-go_agent.tgz"
+        }
+      ],
+      "result": "bosh-aws-xen-ubuntu-trusty-go_agent/3232.12",
+      "timestamp": null
+    }
+  ],
+  "output": [
+    {
+      "blob": "7350d50abfec65c2f5384f752a2c6b491aa1534e",
+      "checksum": {
+        "sha256": "f170a642a180601bfa9178dd89c7811292c1c0aafcbade83fd672c7573480425"
+      },
+      "path": "stemcell.tgz",
+      "size": 505927917
+    }
+  ],
+  "timestamp": "2016-09-21T06:35:31Z"
+}
