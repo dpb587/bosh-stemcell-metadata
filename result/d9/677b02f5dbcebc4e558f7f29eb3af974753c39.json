@@ -1,0 +1,46 @@
+{
+  "branch": "aws-xen-ubuntu-trusty-metadata",
+  "input": [
+    {
+      "branch": "aws-xen-ubuntu-trusty-stemcell",
+      "result": "b216f263377c57df6f499dd24f8a451be69238fe",
+      "timestamp": "2016-09-21T19:38:26Z"
+    }
+  ],
+  "output": [
+    {
+      "blob": "8eaebeafbc8c5dc107e1fa1a7ce6839f96307451",
+      "checksum": {
+        "sha256": "bbce1fc7e0c07ff9594672677bc03b215f1cac2c92ff64daaf6a21cab675a5aa"
+      },
+      "filters": [
+        "gz"
+      ],
+      "path": "filelist.gz",
+      "size": 1424891
+    },
+    {
+      "blob": "61bf8da10978fc03f4579b8045189a580e2e2351",
+      "checksum": {
+        "sha256": "8c6717ea3ab3276aa076150e29707edc493f3b0f0a1a65b5a4ae8d2f26792d25"
+      },
+      "filters": [
+        "gz"
+      ],
+      "path": "manifest.gz",
+      "size": 270
+    },
+    {
+      "blob": "d66aa160a5804573df8ac5103fbfa62fd4725dbd",
+      "checksum": {
+        "sha256": "8494ccc82979c264ba4c5132a06c08b1641246df0f481edf32421f3f0189a95e"
+      },
+      "filters": [
+        "gz"
+      ],
+      "path": "packages.gz",
+      "size": 11426
+    }
+  ],
+  "timestamp": "2016-09-21T20:22:09Z"
+}
