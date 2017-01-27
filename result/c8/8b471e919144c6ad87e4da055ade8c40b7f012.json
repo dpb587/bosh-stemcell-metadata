@@ -1,0 +1,46 @@
+{
+  "branch": "aws-xen-centos-7-metadata",
+  "input": [
+    {
+      "branch": "aws-xen-centos-7-stemcell",
+      "result": "fc197b5515dbd57b0ee8216bfc3d658cc1e3c1c6",
+      "timestamp": "2017-01-27T22:24:59Z"
+    }
+  ],
+  "output": [
+    {
+      "blob": "a73dd0f41347a689c2b4fe8e86eda009cb31f5e0",
+      "checksum": {
+        "sha256": "6fb864fd336469b85b92b7c49c8f874fdb631464d5b958df6c82fe979ded8f9e"
+      },
+      "filters": [
+        "gz"
+      ],
+      "path": "filelist.gz",
+      "size": 1585073
+    },
+    {
+      "blob": "6194c6bf7a3fdf8b048279f041c4d896a453a5f6",
+      "checksum": {
+        "sha256": "89509888a8d78ca9ef6f3def96425ce6e4c27f6ce4127577b2867d4633c71f63"
+      },
+      "filters": [
+        "gz"
+      ],
+      "path": "manifest.gz",
+      "size": 269
+    },
+    {
+      "blob": "6664fa101eb96f5325508095cb40fcff1a21f995",
+      "checksum": {
+        "sha256": "ca9923fb69cfc06d36aa1b51bdfe47182f76a63b1befe0083ea52c24c302a606"
+      },
+      "filters": [
+        "gz"
+      ],
+      "path": "packages.gz",
+      "size": 5162
+    }
+  ],
+  "timestamp": "2017-01-27T22:55:49Z"
+}
