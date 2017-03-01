@@ -14,7 +14,7 @@
         },
         {
           "key": "url",
-          "value": "https://s3.amazonaws.com/bosh-aws-stemcells/light-bosh-stemcell-3363.9-aws-xen-hvm-ubuntu-trusty-go_agent.tgz"
+          "value": "https://s3.amazonaws.com/bosh-core-stemcells/aws/bosh-stemcell-3363.9-aws-xen-hvm-ubuntu-trusty-go_agent.tgz"
         }
       ],
       "result": "bosh-aws-xen-hvm-ubuntu-trusty-go_agent/3363.9",
@@ -23,13 +23,13 @@
   ],
   "output": [
     {
-      "blob": "0eccce462be1b66e9a41540f2e4e2f30d5d5aa23",
+      "blob": "47074429a5be1ac23cad3b7df2b6a6424204f2a9",
       "checksum": {
-        "sha256": "393904d8512f99ec03de26e296b02a4f88680ac83699b791ec686eff4c2ee72e"
+        "sha256": "8708579c405ae2d1a005ae3ff592691e06ebe74b4b8387f4d37adb38663f3585"
       },
       "path": "stemcell.tgz",
-      "size": 308
+      "size": 383459223
     }
   ],
-  "timestamp": "2017-03-01T17:42:25Z"
+  "timestamp": "2017-03-01T17:50:58Z"
 }
