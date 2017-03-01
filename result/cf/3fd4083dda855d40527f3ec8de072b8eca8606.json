@@ -23,13 +23,13 @@
   ],
   "output": [
     {
-      "blob": "12fbbd8db1b1826c9650ab21f6f2a22650895e33",
+      "blob": "0eccce462be1b66e9a41540f2e4e2f30d5d5aa23",
       "checksum": {
-        "sha256": "01f29ae2839fe3db790423852b8dfcda1a4042f3ad8af512ad4b6af9d8aa51b8"
+        "sha256": "393904d8512f99ec03de26e296b02a4f88680ac83699b791ec686eff4c2ee72e"
       },
       "path": "stemcell.tgz",
       "size": 308
     }
   ],
-  "timestamp": "2017-03-01T17:39:59Z"
+  "timestamp": "2017-03-01T17:42:25Z"
 }
