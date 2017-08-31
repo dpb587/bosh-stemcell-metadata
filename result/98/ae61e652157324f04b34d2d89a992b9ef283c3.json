@@ -1,0 +1,35 @@
+{
+  "branch": "aws-xen-centos-7-stemcell",
+  "input": [
+    {
+      "branch": ":concourse",
+      "metadata": [
+        {
+          "key": "name",
+          "value": "bosh-aws-xen-hvm-centos-7-go_agent"
+        },
+        {
+          "key": "version",
+          "value": "3445.2"
+        },
+        {
+          "key": "url",
+          "value": "https://s3.amazonaws.com/bosh-core-stemcells/aws/bosh-stemcell-3445.2-aws-xen-hvm-centos-7-go_agent.tgz"
+        }
+      ],
+      "result": "bosh-aws-xen-hvm-centos-7-go_agent/3445.2",
+      "timestamp": null
+    }
+  ],
+  "output": [
+    {
+      "blob": "b4ab9e758f1ede5e3cdd8b36f089c1f0a64af7ff",
+      "checksum": {
+        "sha256": "47184baddb18c4fe221963a3c2c15e3fc01e2d91178390ab274434f9e4289bdc"
+      },
+      "path": "stemcell.tgz",
+      "size": 567777613
+    }
+  ],
+  "timestamp": "2017-08-31T06:19:43Z"
+}
