@@ -1,5 +1,47 @@
 [
   {
+    "version": "3541.35",
+    "url": "https://s3.amazonaws.com/bosh-core-stemcells/aws/bosh-stemcell-3541.35-aws-xen-hvm-centos-7-go_agent.tgz",
+    "metadata": {
+      "filelist": {
+        "blob": "bb6986629beff0b55464cf9409da51a585a920f3",
+        "checksum": {
+          "sha256": "87aef4483186a685a4d00614ac368be9e1a8bc51cd153dd3fd9d2e619a97faba"
+        },
+        "filters": [
+          "gz"
+        ],
+        "path": "filelist.gz",
+        "size": 1633496,
+        "url": "https://s3.amazonaws.com/dpb587-bosh-stemcell-metadata-us-east-1/v2/aws-xen-centos-7-metadata/bb6986629beff0b55464cf9409da51a585a920f3"
+      },
+      "manifest": {
+        "blob": "e798fcd316a1cf81dd10ee373189c59fa9a44eca",
+        "checksum": {
+          "sha256": "34d891cccb2d9199fc657776ee93f7364d53b8f703a4f64f5fd33a785ef6dfe1"
+        },
+        "filters": [
+          "gz"
+        ],
+        "path": "manifest.gz",
+        "size": 285,
+        "url": "https://s3.amazonaws.com/dpb587-bosh-stemcell-metadata-us-east-1/v2/aws-xen-centos-7-metadata/e798fcd316a1cf81dd10ee373189c59fa9a44eca"
+      },
+      "packages": {
+        "blob": "134efcc95dfaadff05ea5367960a8cd31eaada7e",
+        "checksum": {
+          "sha256": "de848bff72017b99bd0a8d222784eccad1f06c4a23822cff5e83d722f75de441"
+        },
+        "filters": [
+          "gz"
+        ],
+        "path": "packages.gz",
+        "size": 5215,
+        "url": "https://s3.amazonaws.com/dpb587-bosh-stemcell-metadata-us-east-1/v2/aws-xen-centos-7-metadata/134efcc95dfaadff05ea5367960a8cd31eaada7e"
+      }
+    }
+  },
+  {
     "version": "3541.34",
     "url": "https://s3.amazonaws.com/bosh-core-stemcells/aws/bosh-stemcell-3541.34-aws-xen-hvm-centos-7-go_agent.tgz",
     "metadata": {
