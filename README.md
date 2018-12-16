@@ -1,3 +1,7 @@
+**Deprecated.** These scripts are no longer run automatically. For newer methods, see [dpb587/boshua](https://github.com/dpb587/boshua).
+
+---
+
 # bosh-stemcell-metadata
 
 Archiving metadata about stemcells in a more accessible manner.
